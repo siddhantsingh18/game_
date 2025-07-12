@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  background: #000;
+  color: white;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+#romantic-part {
+  background: linear-gradient(#f8cdda, #ffb6b9);
+  color: #000;
+}
+
+#romanticText {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+#revealBtn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background: #ff5e78;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#revealBtn:hover {
+  background: #ff2d55;
+}
+
+#seductive-part {
+  background: radial-gradient(#330000, #000);
+  color: #ff4b5c;
+}
+
+.seductive-messages {
+  font-size: 2rem;
+  max-width: 800px;
+  animation: fadeIn 1s ease-in-out;
+  text-shadow: 0 0 20px red;
+  padding: 0 15px;
+}
+
+.seductive-line {
+  margin: 20px 0;
+  animation: pulse 2s infinite;
+}
+#middle-part {
+  background: linear-gradient(to bottom right, #fff5f5, #ffe6f0);
+  color: #e6005c;
+}
+
+.middle-text {
+  font-size: 1.3rem;
+  max-width: 700px;
+  padding: 20px;
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#continueBtn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #e6005c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#continueBtn:hover {
+  background: #c7004c;
+}
+
+
+#continueBtn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #e6005c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#continueBtn:hover {
+  background: #c7004c;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); color: #ff9999; }
+  100% { transform: scale(1); }
+}
+
+/* ✅ Mobile Responsive Tweaks */
+@media (max-width: 600px) {
+  #romanticText {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  #revealBtn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .seductive-messages {
+    font-size: 1.4rem;
+    max-width: 95%;
+  }
+
+  .seductive-line {
+    margin: 15px 0;
+  }
+}
